@@ -1,0 +1,55 @@
+@import '~styles/theme/_theme.scss';
+
+.dialogRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 8 * $variable-spacing;
+  padding: 10 * $variable-spacing 8 * $variable-spacing;
+}
+
+.title {
+  text-align: center;
+}
+
+.actionButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 6 * $variable-spacing;
+}
+
+.input {
+  width: 100%;
+
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.infoText {
+  margin-top: -4 * $variable-spacing;
+  color: var(--variable-color-text-label-two);
+}
+
+.closeButton {
+  width: 150px;
+}
+
+.actionButton {
+  width: 220px;
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .actionButtonsContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4 * $variable-spacing;
+  }
+
+  .actionButton,
+  .closeButton {
+    width: 100%;
+    height: 50px;
+  }
+}

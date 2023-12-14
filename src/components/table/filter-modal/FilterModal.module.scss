@@ -1,0 +1,59 @@
+@import '~styles/theme/_theme.scss';
+
+.dialog {
+  :global(.MuiPaper-root) {
+    max-width: initial;
+  }
+}
+
+.filterBlock {
+  display: flex;
+  gap: $variable-spacing * 2;
+  flex-flow: column wrap;
+}
+
+.modalActions {
+  margin: auto;
+}
+
+.controlBlock {
+  display: flex;
+  gap: $variable-spacing * 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fieldDropdown {
+  width: 175px;
+}
+
+.input {
+  height: 48px;
+  width: 175px;
+
+  :global(.MuiOutlinedInput-input) {
+    font-size: 14px;
+  }
+}
+
+.dateInput {
+  height: 48px;
+  cursor: pointer;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  border: 1px solid var(--variable-color-border);
+  outline: none;
+  background-color: transparent;
+  color: var(--variable-color-text-main);
+  padding: 0 3 * $variable-spacing;
+
+  :global(.MuiTypography-root) {
+    font-size: 14px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: var(--variable-color-border);
+    background-color: var(--variable-color-primary-secondary);
+  }
+}

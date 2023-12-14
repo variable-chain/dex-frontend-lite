@@ -1,0 +1,45 @@
+@mixin dark-colors {
+  // --variable-color-primary: #7860E3;
+  --variable-color-primary: #3d7afe;
+  --variable-color-primary-rgb: 102, 74, 223;
+  --variable-color-primary-secondary: #7860e333;
+  --variable-color-text-main: #fff;
+  --variable-color-text-highlight: #c9ccfc;
+  --variable-color-text-secondary: #f3f2f2;
+  --variable-color-text-label-one: #aaa;
+  --variable-color-text-label-two: #a4a4a4;
+  --variable-color-text-primarytab-inactive: #818181;
+  --variable-color-text-buy: #089981;
+  --variable-color-text-sell: #f23645;
+
+  // --variable-color-background: #201B35;
+  --variable-color-background: #333;
+  --variable-color-background-page-rgb: 102, 74, 223;
+
+  // --variable-color-background-items: #111216;
+  --variable-color-background-items: #222;
+  --variable-color-background-items-second: #7860e333;
+  --variable-color-background-items-selected: rgba(102, 74, 223, 0.1);
+  --variable-color-background-items-inactive: #2e2e2e;
+  --variable-color-background-table-row: #201d2d;
+  --variable-color-background-table: transparent;
+  --variable-color-background-loader: rgba(102, 74, 223, 0.1);
+  --variable-color-background-buy-rgb: 8, 153, 129;
+  --variable-color-background-sell-rgb: 242, 54, 69;
+  --variable-color-background-buy-inactive-rgb: 129, 129, 129;
+  --variable-color-border: #e5e3e3;
+  --variable-color-icon: #7860e3;
+  --variable-color-icon-second: #383838;
+  --variable-color-separator-border: #666;
+  --variable-color-input-border: #666;
+  --variable-color-logo-second: white;
+  --variable-color-warning-main: #ffda9f;
+  --variable-color-warning-secondary: #ffbdbd;
+
+  // Override colors for toastify
+  --toastify-color-progress-success: #664adf;
+  --toastify-color-progress-error: #ffbdbd;
+  --toastify-color-progress-warning: #ffbdbd;
+  --toastify-color-progress-info: #ffbdbd;
+  --toastify-color-progress-light: linear-gradient(to right, #ffda9f, #ffbdbd, #000);
+}

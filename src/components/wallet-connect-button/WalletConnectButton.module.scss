@@ -1,0 +1,81 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.buttonsHolder {
+  display: flex;
+  gap: $variable-spacing * 4;
+  height: 48px;
+}
+
+.connectWalletButton {
+  min-width: 195px;
+  height: 48px;
+}
+
+.chainButton {
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  min-width: 48px;
+  height: 48px;
+  padding: 0;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.addressButton {
+  display: flex;
+  align-items: center;
+  gap: 2 * $variable-spacing;
+}
+
+.starsHolder {
+  white-space: normal;
+  margin-top: -10px;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  color: var(--variable-color-text-secondary);
+}
+
+.cutAddressName {
+  color: var(--variable-color-text-secondary);
+}
+
+.icon {
+  color: var(--variable-color-text-secondary);
+}
+
+@media screen and ($variable-breakpoint-max-lg) {
+
+  .buttonsHolder {
+    gap: $variable-spacing * 2;
+  }
+
+  .connectWalletButton {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 48px;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .addressButton {
+    padding: 0;
+    min-width: 48px;
+
+    svg {
+      height: 26px;
+      width: 26px;
+    }
+  }
+}

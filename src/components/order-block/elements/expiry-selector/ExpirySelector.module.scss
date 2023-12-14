@@ -1,0 +1,44 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6 * $variable-spacing;
+  margin-bottom: 6 * $variable-spacing;
+}
+
+.expiryOptions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: $variable-spacing;
+
+  :global(.MuiButtonGroup-root) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: $variable-spacing;
+  }
+
+  :global(.MuiButtonBase-root) {
+    flex: 1;
+    border-radius: 8px;
+
+    &.selected {
+      border: 1px solid transparent;
+      background-color: var(--variable-color-primary);
+      color: var(--variable-color-text-secondary);
+    }
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .expiryOptions {
+
+    :global(.MuiButtonBase-root) {
+      min-width: 64px;
+      max-width: 64px;
+    }
+  }
+}

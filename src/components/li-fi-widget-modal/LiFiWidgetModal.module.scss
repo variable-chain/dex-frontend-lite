@@ -1,0 +1,27 @@
+@import '~styles/theme/_theme.scss';
+
+.dialogContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8 * $variable-spacing;
+  padding: 10 * $variable-spacing 8 * $variable-spacing;
+}
+
+.closeButton {
+  width: 150px;
+}
+
+.buttonsBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $variable-spacing * 2;
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .closeButton {
+    width: 100%;
+    height: 50px;
+  }
+}

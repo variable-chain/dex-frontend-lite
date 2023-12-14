@@ -1,0 +1,40 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+
+  &:nth-child(2n) {
+    background-color: var(--variable-color-background-table-row);
+  }
+}
+
+.bodyCell {
+  color: var(--variable-color-text-main);
+  padding: 2 * $variable-spacing 4 * $variable-spacing;
+}
+
+.codeCell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $variable-spacing * 4;
+  border-radius: $variable-border-radius 0 0 $variable-border-radius;
+}
+
+.referralCode {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttonCell {
+  width: 90px;
+}
+
+.modifyCell {
+  border-radius: 0 $variable-border-radius $variable-border-radius 0;
+}
+
+.shareLink {
+  color: var(--variable-color-primary);
+}

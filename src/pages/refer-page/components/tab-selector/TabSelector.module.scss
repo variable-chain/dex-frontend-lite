@@ -1,0 +1,32 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+}
+
+.tab {
+  padding: 3 * $variable-spacing 10 * $variable-spacing;
+
+  &:first-child {
+    border-radius: $variable-border-radius 0 0 $variable-border-radius;
+  }
+
+  &:last-child {
+    border-radius: 0 $variable-border-radius $variable-border-radius 0;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  &.active {
+    background-color: var(--variable-color-primary);
+    color: var(--variable-color-text-secondary);
+  }
+
+  &.inactive {
+    background-color: var(--variable-color-background-items-inactive);
+    color: var(--variable-color-text-primarytab-inactive);
+    cursor: pointer;
+  }
+}

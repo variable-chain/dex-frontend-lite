@@ -1,0 +1,45 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  border: 1px solid var(--variable-color-border);
+  border-radius: $variable-border-radius;
+  margin-top: 6 * $variable-spacing;
+}
+
+.headerWrapper,
+.dataWrapper {
+  padding: 4 * $variable-spacing;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  border-radius: $variable-border-radius $variable-border-radius 0 0;
+  background-color: var(--variable-color-background-items-second);
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.dataWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2 * $variable-spacing;
+}
+
+.symbol {
+  color: var(--variable-color-text-highlight);
+}
+
+.dataLabel {
+  font-weight: 500;
+}
+
+.dataValue {
+  color: var(--variable-color-text-highlight);
+}
+
+.actionIcon {
+  color: var(--variable-color-primary);
+}

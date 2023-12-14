@@ -1,0 +1,21 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: flex-start;
+  gap: $variable-spacing * 4;
+  margin-top: $variable-spacing * 2;
+  margin-bottom: $variable-spacing * 4;
+
+  button {
+    min-width: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.selected {
+  color: var(--variable-color-primary);
+  background-color: var(--variable-color-primary-secondary);
+}

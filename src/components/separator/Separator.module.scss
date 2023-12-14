@@ -1,0 +1,26 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  padding: $variable-spacing 0;
+  background-color: var(--variable-color-background-items);
+
+  .line {
+    height: 0;
+    border-bottom: 1px solid var(--variable-color-separator-border);
+  }
+}
+
+:global(.MuiModal-root) {
+
+  .root {
+    background-color: var(--variable-color-background);
+  }
+}
+
+@media screen and ($variable-breakpoint-height-max-md) and ($variable-breakpoint-max-xs),
+  screen and ($variable-breakpoint-height-max-md) and ($variable-breakpoint-min-lg) {
+
+  .root {
+    padding: $variable-spacing * 0.5 0;
+  }
+}

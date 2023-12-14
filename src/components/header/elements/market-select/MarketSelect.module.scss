@@ -1,0 +1,180 @@
+@import '~styles/theme/_theme.scss';
+@import '~styles/theme/_utils.scss';
+
+.holderRoot {
+  display: flex;
+  align-items: center;
+  gap: 0.5 * $variable-spacing;
+  background-color: var(--variable-color-background-items);
+  border-radius: 8px;
+  height: 84px;
+}
+
+.iconWrapper {
+  @include flex-center;
+
+  height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  background-color: var(--variable-color-background-items);
+  color: var(--variable-color-primary);
+  margin-left: $variable-spacing * 3;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.marketSelectButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: $variable-spacing * 3;
+  border-radius: $variable-spacing * 2;
+  border-color: transparent;
+}
+
+.arrowDropDown {
+  color: var(--variable-color-primary);
+  padding-top: 2 * $variable-spacing;
+}
+
+.selectBlock {
+  border-radius: $variable-spacing;
+  border: 1px solid silver;
+
+  :global(.MuiSelect-select) {
+    background-color: transparent !important;
+  }
+
+  :global(.MuiInputBase-root) {
+    min-width: 240px;
+    color: var(--variable-color-primary);
+    font-weight: 600;
+  }
+
+  :global(.MuiInputLabel-root):global(.Mui-focused) {
+    color: var(--variable-color-text-main);
+  }
+
+  :global(.MuiInputLabel-root) {
+    color: var(--variable-color-text-label-one);
+  }
+}
+
+.selectedMarketBlock {
+  text-align: left;
+}
+
+.selectedMarketLabel {
+  color: var(--variable-color-text-label-one);
+  line-height: 32px;
+}
+
+.selectedMarketValue {
+  display: flex;
+  flex-direction: column;
+  color: var(--variable-color-primary);
+
+  .selectedMarketPerpetual {
+    font-weight: 600;
+    line-height: 12px;
+  }
+}
+
+.collateralFilter {
+  width: 100%;
+}
+
+.dialog {
+
+  :global(.MuiDialog-container) {
+    align-items: flex-start;
+  }
+
+  :global(.MuiPaper-root) {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.optionList {
+  overflow-y: scroll;
+}
+
+.dialogAction {
+  margin-top: $variable-spacing * 6;
+  justify-content: center;
+}
+
+.optionsHeader {
+  display: block;
+  padding: 12px;
+
+  .header {
+    color: var(--variable-color-text-main);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
+.controlsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+@media screen and ($variable-breakpoint-max-lg) {
+
+  .selectedMarketLabel {
+    line-height: 24px;
+  }
+
+  .selectedMarketValue {
+
+    .selectedMarketPerpetual {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .holderRoot {
+    height: 72px;
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+  .iconWrapper {
+    margin-left: $variable-spacing * 2;
+  }
+
+  .marketSelectButton {
+    padding: $variable-spacing * 2;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .holderRoot {
+    width: 100%;
+    min-width: inherit;
+    max-width: inherit;
+  }
+
+  .selectedMarketValue {
+
+    .selectedMarketPerpetual {
+      font-size: 14px;
+      line-height: 8px;
+    }
+  }
+}

@@ -1,0 +1,201 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  margin-top: 4 * $variable-spacing;
+  margin-bottom: 8 * $variable-spacing;
+
+  :global(.MuiPaper-root) {
+    height: 48px;
+  }
+
+  :global(.MuiOutlinedInput-root) {
+    width: 100%;
+    background-color: var(--variable-color-background-items);
+  }
+}
+
+.toolbar {
+  align-items: center;
+  padding: 8px 32px 0;
+  margin: -16px -32px 0;
+  min-height: 80px;
+  background-color: var(--variable-color-background-items);
+}
+
+.leftSide {
+  display: flex;
+  flex: 1;
+  gap: 8 * $variable-spacing;
+
+  .navWrapper {
+    display: flex;
+    gap: 8 * $variable-spacing;
+  }
+}
+
+.rightSide {
+  width: 100%;
+  max-width: 200px;
+}
+
+.navMobileWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: $variable-spacing * 10;
+  padding-bottom: $variable-spacing * 10;
+  gap: $variable-spacing * 6;
+}
+
+.navMobileItem,
+.navItem {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+
+  &.inactive {
+    position: relative;
+    color: var(--variable-color-text-main);
+
+    &:hover {
+      color: var(--variable-color-primary);
+      cursor: pointer;
+      transition: 200ms ease-in-out;
+    }
+  }
+
+  &.active {
+    color: var(--variable-color-primary);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -$variable-spacing;
+      width: 100%;
+      border-bottom: 1px solid var(--variable-color-primary);
+    }
+  }
+}
+
+.navMobileItem {
+
+  &.inactive {
+    padding: 12px;
+    margin: -8px;
+  }
+
+  &.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    padding: 12px;
+    margin: -8px;
+
+    &::after {
+      border-bottom: none;
+    }
+  }
+}
+
+.settings {
+  padding: $variable-spacing * 10;
+  padding-bottom: 0;
+}
+
+.languageSwitcher {
+  padding: $variable-spacing * 10;
+  padding-top: $variable-spacing * 6;
+}
+
+.closeAction {
+  margin-top: auto;
+  text-align: center;
+  padding: $variable-spacing * 10;
+}
+
+.menuButton {
+  margin-left: $variable-spacing * 4;
+  padding: 0;
+  min-width: 48px;
+  height: 48px;
+}
+
+.logoLink {
+  display: flex;
+  line-height: 1;
+}
+
+.selectBoxes {
+  display: flex;
+  gap: $variable-spacing * 6;
+  margin-right: $variable-spacing * 6;
+}
+
+.walletConnect {
+  justify-content: right;
+  display: flex;
+  height: 48px;
+  gap: 15px;
+}
+
+@media screen and ($variable-breakpoint-max-lg) {
+
+  .toolbar {
+    padding: 8px 16px 0;
+    margin: -16px -16px 0;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .root {
+    margin-bottom: 0;
+
+    :global(.MuiPaper-root) {
+      height: inherit;
+    }
+  }
+
+  .leftSide {
+    width: auto;
+  }
+
+  .toolbar {
+    min-height: 80px;
+    padding: 0 40px;
+    margin: -16px -40px 0;
+  }
+
+  .menuButton {
+    margin-left: $variable-spacing * 2;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-sm) {
+
+  .toolbar {
+    min-height: 80px;
+    padding: 0 24px;
+    margin: -16px -24px 0;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .root {
+    padding: 0 12px;
+
+    :global(.MuiPaper-root) {
+      height: auto;
+    }
+  }
+
+  .toolbar {
+    padding: 0 12px;
+    margin: -16px -12px 0;
+    min-height: 72px;
+    background-color: var(--variable-color-background-items);
+  }
+}

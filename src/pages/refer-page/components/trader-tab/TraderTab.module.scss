@@ -1,0 +1,23 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  border-radius: $variable-border-radius;
+  overflow-x: auto;
+}
+
+.divider {
+  border-right: 1px solid var(--variable-color-separator-border);
+  margin: 10 * $variable-spacing 0;
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .root {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+}

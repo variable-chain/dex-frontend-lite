@@ -1,0 +1,42 @@
+@mixin colors {
+  
+  // --variable-color-primary: #664ADF;
+  --variable-color-primary: #0766AD;
+  --variable-color-primary-rgb: 102, 74, 223;
+  --variable-color-primary-secondary: #eff0fe;
+  --variable-color-text-main: #1c1c1c;
+  --variable-color-text-highlight: #3f317e;
+  --variable-color-text-secondary: #fff;
+  --variable-color-text-label-one: #666;
+  --variable-color-text-label-two: #818181;
+  --variable-color-text-primarytab-inactive: #a4a4a4;
+  --variable-color-text-buy: #089981;
+  --variable-color-text-sell: #f23645;
+  --variable-color-background: #f8f8f8;
+  --variable-color-background-page-rgb: 102, 74, 223;
+  --variable-color-background-items: #fff;
+  --variable-color-background-items-second: #f8f8f8;
+  --variable-color-background-items-selected: rgba(102, 74, 223, 0.1);
+  --variable-color-background-items-inactive: #e5e3e3;
+  --variable-color-background-table-row: #f8f8f8;
+  --variable-color-background-table: transparent;
+  --variable-color-background-loader: rgba(102, 74, 223, 0.1);
+  --variable-color-background-buy-rgb: 8, 153, 129;
+  --variable-color-background-sell-rgb: 242, 54, 69;
+  --variable-color-background-buy-inactive-rgb: 129, 129, 129;
+  --variable-color-border: #e5e3e3;
+  --variable-color-icon: #664adf;
+  --variable-color-icon-second: #f3f2f2;
+  --variable-color-separator-border: #e5e3e3;
+  --variable-color-input-border: #e5e3e3;
+  --variable-color-logo-second: black;
+  --variable-color-warning-main: #ffda9f;
+  --variable-color-warning-secondary: #ffbdbd;
+
+  // Override colors for toastify
+  --toastify-color-progress-success: #664adf;
+  --toastify-color-progress-error: #ffbdbd;
+  --toastify-color-progress-warning: #ffbdbd;
+  --toastify-color-progress-info: #ffbdbd;
+  --toastify-color-progress-light: linear-gradient(to right, #ffda9f, #ffbdbd, #000);
+}

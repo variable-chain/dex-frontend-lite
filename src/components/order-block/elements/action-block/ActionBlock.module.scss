@@ -1,0 +1,86 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  margin-top: $variable-spacing * 2;
+  margin-bottom: $variable-spacing * 0;
+}
+
+.buyButton {
+  width: 100%;
+}
+
+.dialog {
+
+  :global(.MuiPaper-root) {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.emphasis {
+  background-color: var(--variable-color-background-items-second);
+  padding: $variable-spacing * 5 $variable-spacing * 8;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.left {
+  color: var(--variable-color-text-label-two);
+}
+
+.centered {
+  display: block;
+  text-align: center;
+}
+
+.orderDetails {
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 3;
+}
+
+.newPositionHeader {
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 3;
+}
+
+.newPositionDetails {
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 3;
+}
+
+.validityMessages {
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 2;
+}
+
+.goMessage {
+  padding: 8px 0 0;
+}
+
+@media screen and ($variable-breakpoint-max-sm) {
+
+  .emphasis {
+    padding: $variable-spacing * 3 $variable-spacing * 8;
+  }
+
+  .dialogTitle {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 24px 16px 16px;
+  }
+
+  .dialogActions {
+    padding: 16px 16px 24px;
+  }
+
+  .rightSide {
+    font-size: 10px;
+  }
+}

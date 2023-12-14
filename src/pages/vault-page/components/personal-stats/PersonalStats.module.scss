@@ -1,0 +1,31 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: block;
+}
+
+.heading {
+  color: var(--variable-color-text-main);
+  padding-bottom: $variable-spacing * 2;
+}
+
+.statContainer {
+  margin-top: $variable-spacing * 8;
+  text-align: left;
+}
+
+.statLabel {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--variable-color-text-label-two);
+  white-space: nowrap;
+  margin-bottom: $variable-spacing * 0.5;
+  font-size: 12px;
+}
+
+.statValue {
+  display: block;
+  color: var(--variable-color-text-highlight);
+  font-weight: 600;
+  white-space: nowrap;
+}

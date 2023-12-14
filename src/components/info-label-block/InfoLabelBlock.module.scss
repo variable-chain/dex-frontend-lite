@@ -1,0 +1,59 @@
+@import '~styles/theme/_theme.scss';
+
+.dialog {
+
+  :global(.MuiPaper-root) {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.dialogContent {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dialogContent > :not(:first-of-type) {
+  margin-top: 16px;
+}
+
+.dialogAction {
+  justify-content: center;
+}
+
+.dialogTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.iconHolder {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  margin-top: -4px;
+}
+
+.actionIcon {
+  cursor: pointer;
+  position: relative;
+  color: var(--variable-color-primary);
+  font-size: 1rem;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $variable-spacing * 2;
+}
+
+.title {
+  color: var(--variable-color-text-main);
+  line-height: 1;
+
+  @include media-phone {
+    font-size: 0.75rem;
+  }
+}

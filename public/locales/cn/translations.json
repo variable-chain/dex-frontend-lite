@@ -1,0 +1,654 @@
+{
+  "navigation": {
+    "trade": "交易",
+    "refer": "邀请返佣",
+    "vault": "金库",
+    "portfolio": "投资组合"
+  },
+  "pages": {
+    "geolocation": {
+      "access-denied": "要继续操作，请在您的浏览器中启用地理定位服务。关于如何启用地理定位服务的说明，请参阅您的浏览器文档。",
+      "access-blocked": "D8X协议软件禁止某些司法管辖区的任何用户访问或使用，包括但不限于美利坚合众国（美国）、白俄罗斯、布隆迪、缅甸、中非共和国、刚果、民主共和国、朝鲜民主主义人民共和国（朝鲜）、几内亚、几内亚比绍、 海地、伊朗、伊拉克、也门、黎巴嫩、利比亚、马里、尼加拉瓜、索马里、苏丹、南苏丹共和国、叙利亚、委内瑞拉和津巴布韦。",
+      "not-supported": "您的浏览器暂不支持地理定位。要继续操作，请切换至其他已支持地理定位的浏览器。",
+      "locating": "定位中...",
+      "getting-location": "定位认证中..."
+    },
+    "trade": {
+      "stats": {
+        "mid-price": "中间价",
+        "mark-price": "标记价格",
+        "index-price": "指数价格",
+        "funding-rate": "资金费率",
+        "open-interest": "持仓量",
+        "view-graph": "查看图表",
+        "hide-graph": "隐藏图表"
+      },
+      "positions-table": {
+        "table-title": "持仓",
+        "table-header": {
+          "symbol": "币对",
+          "size": "仓位大小",
+          "side": "涨跌",
+          "entry-price": "开仓价",
+          "liq-price": "强平价",
+          "margin": "本金",
+          "pnl": "未实现盈亏",
+          "tp-sl": "止盈/止损"
+        },
+        "table-content": {
+          "buy": "买入",
+          "sell": "卖出",
+          "modify": "调整",
+          "connect": "请连接钱包",
+          "no-open": "无持仓",
+          "multiple": "多个",
+          "partial": "部分"
+        },
+        "position-block-mobile": {
+          "symbol": "币对",
+          "modify": "调整"
+        },
+        "modify-modal": {
+          "title": "调整仓位",
+          "tp-sl-title": "止盈/止损",
+          "tp-sl-position": "为您的{{positionSize}}现有订单设置止盈止损",
+          "selector": {
+            "close": "关闭",
+            "add": "增加",
+            "remove": "减少"
+          },
+          "close": "关闭仓位",
+          "share": "分享仓位",
+          "add": "增加抵押品",
+          "remove": "减少抵押品",
+          "pos-details": {
+            "title": "新仓位详情",
+            "size": "仓位大小",
+            "margin": "本金",
+            "leverage": "杠杆",
+            "liq-price": "强平价"
+          },
+          "cancel": "取消",
+          "confirm": "确认",
+          "create": "创建"
+        },
+        "share-modal": {
+          "share-description": "保存图像并在社交媒体上分享"
+        },
+        "toasts": {
+          "submit-close": {
+            "title": "确认平仓"
+          },
+          "submitted": {
+            "title": "订单已提交",
+            "body": "币对"
+          },
+          "tx-failed": {
+            "title": "交易失败",
+            "body": "原因"
+          },
+          "error-processing": {
+            "title": "处理交易时发生错误",
+            "body": "原因"
+          },
+          "adding-collateral": {
+            "title": "增加抵押品"
+          },
+          "collateral-added": {
+            "title": "抵押品已增加",
+            "body1": "币对",
+            "body2": "数量"
+          },
+          "removing-collateral": {
+            "title": "减少抵押品"
+          },
+          "collateral-removed": {
+            "title": "抵押品已减少",
+            "body1": "币对",
+            "body2": "数量"
+          },
+          "trade-executed": {
+            "title": "交易已执行",
+            "body": "币对"
+          },
+          "order-failed": {
+            "title": "订单失败",
+            "body1": "币对",
+            "body2": "原因"
+          }
+        }
+      },
+      "orders-table": {
+        "table-title": "当前持仓",
+        "table-header": {
+          "symbol": "币对",
+          "side": "涨跌",
+          "type": "方式",
+          "order-size": "仓位大小",
+          "limit-price": "限价",
+          "stop-price": "止盈止损价",
+          "leverage": "杠杆",
+          "good-until": "截至"
+        },
+        "table-content": {
+          "buy": "买入",
+          "sell": "卖出",
+          "connect": "请连接钱包",
+          "no-open": "未开仓订单",
+          "na": "无",
+          "cancel": "取消",
+          "limit": "限价",
+          "market": "市价",
+          "stop": "止盈止损"
+        },
+        "cancel-modal": {
+          "title": "取消订单",
+          "content": "确定取消此订单？",
+          "back": "返回",
+          "confirm": "确认取消"
+        },
+        "order-block-mobile": {
+          "symbol": "币对",
+          "cancel": "取消"
+        },
+        "toasts": {
+          "cancel-order": {
+            "title": "待完成"
+          },
+          "order-cancelled": {
+            "title": "订单已取消",
+            "body": "币对"
+          },
+          "tx-failed": {
+            "title": "交易失败",
+            "body": "原因"
+          },
+          "error-processing": {
+            "title": "处理交易时发生错误",
+            "body": "原因"
+          }
+        }
+      },
+      "history-table": {
+        "table-title": "交易历史",
+        "table-header": {
+          "time": "时间",
+          "perpetual": "永续",
+          "side": "涨跌",
+          "price": "价格",
+          "quantity": "数量",
+          "fee": "手续费",
+          "realized-profit": "未实现盈亏"
+        },
+        "table-content": {
+          "connect": "请连接钱包",
+          "no-open": "无交易历史"
+        },
+        "history-block-mobile": {
+          "symbol": "币对"
+        }
+      },
+      "funding-table": {
+        "table-title": "资金费率",
+        "table-header": {
+          "time": "时间",
+          "perpetual": "永续",
+          "funding-payment": "资金费率"
+        },
+        "table-content": {
+          "connect": "请连接钱包",
+          "no-open": "无资金费率数据"
+        },
+        "funding-block-mobile": {
+          "symbol": "币对"
+        }
+      },
+      "order-block": {
+        "selector": {
+          "long": "开多",
+          "short": "开空"
+        },
+        "order-type": {
+          "market": "市价单",
+          "limit": "限价单",
+          "stop": "止盈止损单"
+        },
+        "order-size": {
+          "title": "仓位大小",
+          "body1": "设置订单仓位",
+          "body2": "根据您的持仓情况和交易所的状态，您的最大仓位为：",
+          "body3": "永续的最小仓位为：",
+          "body4": "最小数量为"
+        },
+        "limit-price": {
+          "title": "限价",
+          "body1": "如果您设置限价，订单将以预设限价或更优价格执行。",
+          "body2": "对于止盈止损单，您可以选择设置限价。设置限价的止盈止损单为限价止盈止损单（即限价单），未设置限价的止盈止损单为市价止盈止损单（即市价单）。"
+        },
+        "trigger-price": {
+          "title": "触发价",
+          "body1": "触发价是触发止盈止损单的标记价格。",
+          "body2": "如果除了触发价您未设置限价，您将下达止盈止损单。触发该价格后，订单将以当前最佳价格执行。",
+          "body3": "如果除了触发价您还设置了限价，您将下达限价止盈止损单。订单将以预设限价或更优价格执行。"
+        },
+        "leverage": {
+          "title": "杠杆",
+          "body1": "设置订单杠杆。",
+          "body2": "如果您的订单减少仓位（“部分平仓”），设置的杠杆不受影响。"
+        },
+        "slippage": {
+          "title": "滑点设置",
+          "body": "选择滑点上限",
+          "max": "最高开仓价：",
+          "min": "最低开仓价：",
+          "cancel": "取消",
+          "confirm": "确认"
+        },
+        "reduce-only": "仅减少",
+        "expiry": {
+          "title": "过期设置",
+          "body": "设置主订单到期后的天数（此设置不会影响您的止盈和止损订单）",
+          "close": "关闭"
+        },
+        "stop-loss": {
+          "title": "止损",
+          "body1": "您可以为您的主订单设置止损单。",
+          "body2": "如果您设置-50%，您将创建第二个订单，当您的主订单损失达到-50%时，该订单将被触发。",
+          "body3": "从技术上讲，您设置的是反向止损市价订单（如果您的主订单是买入订单，则您设置的是止损市价卖出订单）。 触发价是自动计算的，假设您以滑点设置允许的最差价格输入，您的总体损失将根据您的选择进行计算。",
+          "none": "无"
+        },
+        "take-profit": {
+          "title": "止盈",
+          "body1": "您可以为您的主订单设置止损单。",
+          "body2": "如果您设置100%，您将创建第二个订单，当您的主订单利润达到100%时，该订单将被触发。",
+          "body3": "从技术上讲，您设置的是反向限价单（如果您的主订单是买入订单，则您设置的是限价卖出订单）。 限价是自动计算的，假设您以滑点设置允许的最差价格输入，您的总体利润将根据您的选择进行计算。",
+          "none": "无"
+        },
+        "info": {
+          "balance": "钱包余额",
+          "order-size": "仓位大小",
+          "fees": "手续费",
+          "approx-deposit": "从钱包充值约为"
+        },
+        "review": {
+          "title": "查看订单"
+        }
+      },
+      "action-block": {
+        "toasts": {
+          "processed": {
+            "title": "订单提交已处理"
+          },
+          "orders-submitted": {
+            "title": "订单已提交",
+            "body": "币对"
+          },
+          "order-submitted": {
+            "title": "订单已提交",
+            "body": "币对"
+          },
+          "error": {
+            "title": "处理交易的时候出现错误"
+          },
+          "tx-failed": {
+            "title": "交易失败",
+            "body": "原因"
+          }
+        },
+        "validity": {
+          "closed": "订单将在市场开盘时执行",
+          "order-too-large": "订单过大，导致订单失败",
+          "order-too-small": "订单过小，导致订单失败",
+          "position-too-small": "仓位过小，导致订单失败",
+          "below-min-position": "警告：订单小于仓位",
+          "insufficient-balance": "钱包余额不足，导致订单失败",
+          "undefined": "止盈与杠杆不兼容，订单未执行",
+          "good-to-go": "准备就绪",
+          "pass": "通过",
+          "fail": "失败"
+        },
+        "order-types": {
+          "market": "市价单",
+          "limit": "限价单",
+          "stop": "止盈止损单"
+        },
+        "order-action": {
+          "long": "开多",
+          "short": "开空"
+        },
+        "review": {
+          "title": "查看订单",
+          "deposit": "从钱包充值",
+          "balance": "钱包余额",
+          "fee": "手续费",
+          "max": "最高开仓价",
+          "min": "最低开仓价",
+          "trigger-price": "触发价",
+          "limit-price": "限价",
+          "stop-loss": "止损价",
+          "take-profit": "止盈价",
+          "details": "新仓位详情",
+          "size": "仓位大小",
+          "margin": "本金",
+          "leverage": "杠杆",
+          "liq-price": "强平价",
+          "validity-checks": "有效性检查",
+          "cancel": "取消",
+          "confirm": "确认"
+        }
+      },
+      "filter": {
+        "field": "场地:",
+        "type": "类型:",
+        "value": "价值:",
+        "value-placeholder": "要过滤的值",
+        "clear": "清除过滤器"
+      }
+    },
+    "refer": {
+      "tab-selector": {
+        "referrer": "作为邀请人",
+        "trader": "作为交易员"
+      },
+      "referrer-tab": {
+        "disclaimer-text-block1": "通过邀请交易员在D8X上交易赚取返佣。返佣将每周结算一次，自动到账。",
+        "disclaimer-text-block2": "从D8X邀请计划查看详情",
+        "total-earned-commission": "总佣金",
+        "commission-rate": "您的返佣",
+        "title1": "邀请人数",
+        "title2": "邀请 & 赚取",
+        "codes": "专属码",
+        "add-partner": "添加合作伙伴",
+        "create-code": "创建专属码",
+        "na": "无",
+        "referrer-rebate-rate": "邀请人返佣比例",
+        "trader-rebate-rate": "交易员返佣比例",
+        "agency-rebate-rate": "代理返佣比例",
+        "share": "分享",
+        "share-success": "邀请链接复制成功",
+        "share-error": "复制邀请链接时出现错误",
+        "modify": "调整",
+        "no-codes": "无返佣码"
+      },
+      "manage-code": {
+        "title-create": "创建邀请码",
+        "title-add": "添加合作伙伴",
+        "commission-rate": "您的返佣：",
+        "you-receive": "您将收到",
+        "trader-receives": "交易员将收到",
+        "you": "邀请人",
+        "partner": "合作伙伴",
+        "trader-kickback": "设置交易员返佣比例：",
+        "partner-kickback": "设置合作伙伴返佣：",
+        "partner-address": "合作伙伴地址：",
+        "enter-code": "输入专属码",
+        "code-taken": "专属码已被使用",
+        "create-code": "创建专属码",
+        "instructions": "仅允许使用大写字符、数字、下划线(_) 和连字符 (-) 。",
+        "cancel": "取消",
+        "enter-addr": "输入地址",
+        "error": "请输入有效地址"
+      },
+      "toast": {
+        "success-create": "专属码创建成功",
+        "success-add-partner": "合作伙伴添加成功",
+        "success-modify": "专属码修改成功",
+        "success-apply": "专属码申请成功"
+      },
+      "trader-tab": {
+        "title1": "您的折扣",
+        "earned-rebates": "总返佣",
+        "open-rewards": "打开奖励",
+        "title2": "交易 & 赚取",
+        "disclaimer-text-block1": "输入邀请码以获取手续费折扣。",
+        "disclaimer-text-block2": "折扣每周结算，自动到账。",
+        "your-rebate-rate": "您的返佣比例",
+        "your-active-code": "有效专属码",
+        "enter-new-code": "输入新的专属码",
+        "title3": "输入邀请码",
+        "enter-a-code": "输入专属码",
+        "instructions": "您只能将邀请码链接至您的钱包地址。链接成功后将无法修改。",
+        "cancel": "取消",
+        "enter-code": "输入专属码",
+        "code-not-found": "无法找到此专属码",
+        "use-code": "使用专属码"
+      },
+      "use-code": {
+        "title": "使用此邀请码",
+        "base": "邀请码",
+        "trader-rebate": "交易员返佣比例",
+        "connect-wallet": "请连接钱包",
+        "already-linked": "您已申请邀请码",
+        "cancel": "取消",
+        "confirm": "确认"
+      }
+    },
+    "vault": {
+      "personal-stats": {
+        "title": "数据统计",
+        "amount": {
+          "title": "数量",
+          "info": "您拥有的d{{poolSymbol}}数量。"
+        },
+        "earnings": {
+          "title": "预估收益",
+          "info1": "预估收入约为您的收入。",
+          "info2": "预估收益 = d{{poolSymbol}}余额（按市场价计算）+ {{poolSymbol}}总提现量 - {{poolSymbol}}总充值量"
+        },
+        "initiated": {
+          "title": "发起提现？",
+          "info1": "指示您是否已向{{poolSymbol}}池发起提现请求。"
+        },
+        "withdrawal-amount": {
+          "title": "提现数量",
+          "info1": "发起提现的d{{poolSymbol}}数量。",
+          "info2": "您的流动性将继续参与资金池的盈亏和费用收入，直到您提现为止。"
+        },
+        "date": {
+          "title": "可以提现",
+          "info1": "您可以在发起提现的2天后提取流动性。",
+          "info2": "如果您在准备提现后的4天内未提取资金，任何人都可以代表您执行提现。在这种情况下，资金将发送到您的地址，执行人将从您的资金中赚取少量费用。"
+        }
+      },
+      "global-stats": {
+        "apy": "实时APY",
+        "tvl": "TVL",
+        "price": "d{{poolSymbol}}价格",
+        "supply": "d{{poolSymbol}}供应量"
+      },
+      "add": {
+        "title": "添加流动性",
+        "info1": "将{{poolSymbol}}添加流动性到池中以获取d{{poolSymbol}}（即代表流动性池中所有权的ERC-20 Token）。",
+        "info2": "作为流动性提供者，您将通过以抵押货币抵押的所有交易赚取交易费用和资金利率付款。您还将参与池中的PnL。d{{poolSymbol}}实时累积费用、资金费率和盈亏。",
+        "amount": {
+          "title": "{{poolSymbol}}数量",
+          "info1": "设置您要添加到池中的{{poolSymbol}}数量。"
+        },
+        "receive": "您会收到d{{poolSymbol}}",
+        "max": "最大：",
+        "button": "添加"
+      },
+      "withdraw": {
+        "title": "提取流动性",
+        "info1": "要提取流动性，您首先要发起提现。请记住，处理请求需要48小时，并且您一次只能发起一项提现请求。",
+        "info2": "48小时后，可提取的d{{poolSymbol}}以d{{poolSymbol}}价格兑换为{{poolSymbol}}。",
+        "initiate": {
+          "title": "1. 发起{{poolSymbol}}的提现",
+          "info1": "设置您想要兑换{{poolSymbol}}的d{{poolSymbol}}数量。",
+          "info2": "48小时后，该金额可以转换为MATIC并从流动性池中提取。 ",
+          "button": "发起提现"
+        },
+        "action": {
+          "title": "提现{{poolSymbol}}",
+          "info1": "该金额可转换为{{poolSymbol}}，可以从流动性池中提取。",
+          "date": "可以提现：",
+          "receive": "您将收到：",
+          "button": "提现"
+        }
+      },
+      "na": "无",
+      "overdue": "过期",
+      "now": "现在",
+      "toast": {
+        "adding": "增加流动性",
+        "added": "流动性已增加",
+        "error": {
+          "title": "增加流动性时发生错误",
+          "body": "原因"
+        },
+        "withdrawing": "提取流动性",
+        "withdrawn": "流动性提取",
+        "error-withdrawing": {
+          "title": "提取流动性时发生错误",
+          "body": "原因"
+        },
+        "initiating": "发起流动性提现",
+        "initiated": "流动性体现已发起",
+        "error-initiating": {
+          "title": "发起提现时发生错误",
+          "body": "原因"
+        }
+      }
+    },
+    "portfolio": {
+      "perpetuals": "永续合约",
+      "vault": "金库",
+      "account-value": {
+        "main-title": "你的帐户",
+        "title": "账户价值",
+        "details": {
+          "wallet": {
+            "title": "钱包详情",
+            "funds": "资金"
+          },
+          "perps": {
+            "title": "永续合约详情",
+            "leverage": "杠杠",
+            "unrealized": "未实现盈亏",
+            "realized": "已实现盈亏",
+            "referral": "推荐收入"
+          },
+          "vault": {
+            "title": "金库详细信息",
+            "assets": "资产",
+            "assets-pool": "集合资产",
+            "earnings-pool": "每池收益",
+            "total": "估算总额 收益"
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "external-service-status": "外部服务状态"
+  },
+  "common": {
+    "change-language": "切换语言",
+    "wallet-connect": "连接",
+    "one-click": {
+      "disable": "禁用一键交易",
+      "enable": "启用一键交易"
+    },
+    "li-fi-widget": {
+      "button-title": "LI.FI widget",
+      "header-to": "跨链转入",
+      "header-from": "跨链转出"
+    },
+    "pagination": {
+      "per-page": "每页"
+    },
+    "settings": {
+      "title": "设置",
+      "ui-settings": {
+        "title": "用户界面设置",
+        "one-click-trading": {
+          "title": "一键交易"
+        },
+        "order-block": {
+          "title": "订单号",
+          "left": "左",
+          "right": "右"
+        },
+        "theme": {
+          "title": "主题",
+          "dark": "深色",
+          "light": "浅色"
+        },
+        "default-currency": {
+          "title": "默认货币",
+          "base": "基准",
+          "quote": "报价",
+          "pool": "联营"
+        }
+      },
+      "one-click-modal": {
+        "title": "一键交易",
+        "modal-button": "设置",
+        "description": "一键交易允许您通过将发布和取消订单的操作委托给您拥有的子账户。",
+        "create-delegate": {
+          "title": "创建委托账号",
+          "description": "首先，您需要创建一个委托账户",
+          "create-success-result": "创建委托账户并启用一键交易功能。",
+          "create": "创建"
+        },
+        "manage-delegate": {
+          "title": "管理委托账户",
+          "remove-action-result": "一键交易功能已禁用",
+          "activate-success-result": "一键交易功能已启用。如果重新加载或离开页面，请重新启用该功能。",
+          "activate-error-result": "钱包无效，请重置您的委托并再次尝试。",
+          "activate": "启用",
+          "deactivate": "禁用",
+          "status": {
+            "title": "一键交易功能状态",
+            "active": "启用",
+            "inactive": "未启用"
+          },
+          "address": "委托地址",
+          "amount": "委托钱包金额（gas费）",
+          "remove": "移除",
+          "fund": "存入资金"
+        },
+        "funding-modal": {
+          "title": "存入资金至委托钱包",
+          "description": "向委托钱包存入资金用于支付gas费",
+          "fund": "存入资金"
+        }
+      }
+    },
+    "select": {
+      "option-all": "凡是",
+      "collateral": {
+        "label": "抵押品：",
+        "label2": "流动性池：",
+        "headers": {
+          "collateral": "抵押品",
+          "num-of-perps": "永续人数"
+        }
+      },
+      "market": {
+        "label": "市场",
+        "header": "选择市场",
+        "crypto": "加密货币",
+        "fx": "外汇",
+        "commodity": "商品",
+        "closed": "休市"
+      },
+      "search": " 搜索...",
+      "perpetual": {
+        "label": "永续:",
+        "headers": {
+          "pair": "交易对",
+          "status": "状态"
+        }
+      }
+    },
+    "info-modal": {
+      "close": "关闭"
+    },
+    "refresh": "刷新",
+    "filter": "筛选"
+  },
+  "error": {
+    "wrong-network": "错误网络"
+  }
+}

@@ -1,0 +1,34 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  border-radius: $variable-border-radius;
+  padding: 6 * $variable-spacing 4 * $variable-spacing;
+  margin-top: 4 * $variable-spacing;
+  background-color: var(--variable-color-background-items);
+}
+
+.select {
+  width: 100%;
+  margin-bottom: 6 * $variable-spacing;
+
+  div {
+    width: 100%;
+    padding: 4 * $variable-spacing;
+  }
+}
+
+.buttonsBlock {
+  display: flex;
+  gap: 2 * $variable-spacing;
+}
+
+.dropdownSelect {
+  margin-bottom: 6 * $variable-spacing;
+}
+
+.dropdown {
+  :global(.MuiPaper-root) {
+    color: var(--variable-color-text-main);
+    background-color: var(--variable-color-background);
+  }
+}

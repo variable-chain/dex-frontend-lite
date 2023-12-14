@@ -1,0 +1,79 @@
+$variable-font-primary: 'Helvetica';
+$variable-font-size-body: 14px;
+$variable-font-weight-body: 400;
+$variable-line-height-body: 22px;
+$variable-font-size-card: 24px;
+$variable-font-weight-card: 400;
+$variable-line-height-card: 32px;
+$variable-font-size-text: 24px;
+$variable-font-weight-text: 400;
+$variable-line-height-text: 32px;
+$variable-font-size-header: 120px;
+$variable-font-weight-header: 600;
+$variable-line-height-header: 145px;
+$variable-font-size-sub-header: 48px;
+$variable-font-weight-sub-header: 600;
+$variable-line-height-sub-header: 58px;
+$variable-spacing: 4px;
+$variable-border-radius-small: 4px;
+$variable-border-radius: 6px;
+$variable-button-border-radius: 8px;
+$variable-section-gap-desktop: 200px;
+$variable-section-gap-mobile: 100px;
+$variable-breakpoint-max-xs: 'max-width: 599px';
+$variable-breakpoint-min-sm: 'min-width: 600px';
+$variable-breakpoint-max-sm: 'max-width: 967px';
+$variable-breakpoint-min-md: 'min-width: 968px';
+$variable-breakpoint-max-md: 'max-width: 1279px';
+$variable-breakpoint-min-lg: 'min-width: 1280px';
+$variable-breakpoint-max-lg: 'max-width: 1649px';
+$variable-breakpoint-min-xl: 'min-width: 1650px';
+$variable-breakpoint-height-max-md: 'max-height: 1200px';
+$media: (
+  sm: 599px,
+  md: 967px,
+  lg: 1279px,
+  xl: 1649px,
+);
+
+@mixin md($breakpoint) {
+  @each $breakpoints, $size in $media {
+    @if $breakpoint == $breakpoints {
+      @media screen and (max-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-phone() {
+  @include md('sm') {
+    @content;
+  }
+}
+
+@mixin media-tablet() {
+  @include md('md') {
+    @content;
+  }
+}
+
+@mixin media-desktop() {
+  @include md('lg') {
+    @content;
+  }
+}
+
+@mixin theme-light() {
+
+  :root[data-theme='light'] {
+    @content;
+  }
+}
+
+@mixin theme-dark() {
+
+  :root[data-theme='dark'] {
+    @content;
+  }
+}

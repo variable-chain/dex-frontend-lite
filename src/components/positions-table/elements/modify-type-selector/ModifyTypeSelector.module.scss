@@ -1,0 +1,26 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  gap: $variable-spacing * 8;
+  padding-bottom: 20px;
+
+  :global(.MuiButtonBase-root) {
+
+    &.selected {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.selected {
+  color: var(--variable-color-primary);
+  background-color: var(--variable-color-primary-secondary);
+}

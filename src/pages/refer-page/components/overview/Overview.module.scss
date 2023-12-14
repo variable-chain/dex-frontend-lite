@@ -1,0 +1,38 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  background-color: var(--variable-color-background-items-second);
+  padding: 10 * $variable-spacing;
+  border-radius: $variable-border-radius 0 0 $variable-border-radius;
+  box-sizing: content-box;
+  min-width: 195px;
+}
+
+.title {
+  margin-bottom: 10 * $variable-spacing;
+  color: var(--variable-color-text-main);
+}
+
+.dataBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8 * $variable-spacing;
+  color: var(--variable-color-text-highlight);
+
+  .dataTitle {
+    color: var(--variable-color-text-main);
+    margin-bottom: $variable-spacing;
+  }
+
+  .dataValue {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .root {
+    border-radius: $variable-border-radius $variable-border-radius 0 0;
+  }
+}

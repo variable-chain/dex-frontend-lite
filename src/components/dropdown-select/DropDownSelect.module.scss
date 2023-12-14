@@ -1,0 +1,52 @@
+@import '~styles/theme/_theme.scss';
+
+.dropDownButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 48px;
+  padding-left: 3 * $variable-spacing;
+  padding-right: 3 * $variable-spacing;
+  border-radius: 2 * $variable-spacing;
+
+  &.fullWidth {
+    width: 100%;
+  }
+}
+
+.menuHolder {
+
+  :global(.MuiPaper-root) {
+    color: var(--variable-color-text-main);
+    background-color: var(--variable-color-background);
+  }
+}
+
+.selectedValue {
+  display: flex;
+  align-items: center;
+  gap: 2 * $variable-spacing;
+
+  svg {
+    color: var(--variable-color-primary);
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.arrowDropDown {
+  color: var(--variable-color-primary);
+  padding-top: 2 * $variable-spacing;
+
+  &.disabledHandle {
+    color: var(--variable-color-text-label-two);
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .selectedValue {
+    font-size: 14px;
+  }
+}

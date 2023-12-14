@@ -1,0 +1,38 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+  gap: $variable-spacing * 8;
+  margin-top: $variable-spacing * 2;
+  margin-bottom: $variable-spacing * 4;
+
+  button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.selected {
+  color: var(--variable-color-primary);
+  background-color: var(--variable-color-primary-secondary);
+}
+
+@media screen and ($variable-breakpoint-height-max-md) {
+
+  .root {
+    margin-bottom: 3 * $variable-spacing;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .root {
+
+    button {
+      font-size: 14px;
+      max-height: 40px;
+    }
+  }
+}

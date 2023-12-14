@@ -1,0 +1,9 @@
+@import '~styles/theme/_theme.scss';
+
+.menuItem {
+  color: var(--variable-color-text-main);
+
+  &.selected {
+    background-color: var(--variable-color-background-items-selected);
+  }
+}

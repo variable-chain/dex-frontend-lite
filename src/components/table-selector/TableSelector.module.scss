@@ -1,0 +1,42 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  background-color: var(--variable-color-background-items);
+
+  &:global(.MuiPaper-root) {
+    border-radius: $variable-border-radius;
+    padding: 4 * $variable-spacing 6 * $variable-spacing;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+
+    &.selected {
+      color: var(--variable-color-primary);
+      background-color: var(--variable-color-primary-secondary);
+    }
+  }
+}
+
+.headerRoot {
+  padding: 0;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2 * $variable-spacing;
+}
+
+.tableSelectorsWrapper {
+  flex: 1;
+  display: flex;
+  gap: 2 * $variable-spacing;
+}
+
+.content {
+  padding: 0 !important;
+  overflow-x: auto;
+}

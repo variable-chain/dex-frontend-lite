@@ -1,0 +1,28 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--variable-color-background);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: calc($variable-spacing / 2);
+  color: var(--variable-color-text-main);
+}
+
+.infoText {
+  font-size: 12px;
+}
+
+@media screen and ($variable-breakpoint-height-max-md) and ($variable-breakpoint-max-xs),
+  screen and ($variable-breakpoint-height-max-md) and ($variable-breakpoint-min-lg) and ($variable-breakpoint-max-lg) {
+
+  .infoText {
+    font-size: 10px;
+  }
+}

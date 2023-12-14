@@ -1,0 +1,43 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  border-radius: 4px;
+  border: 1px solid #EEEDED;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  color: var(--variable-color-text-main);
+  padding: $variable-spacing * 3;
+}
+
+.optionRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--variable-color-text-main);
+  padding: $variable-spacing * 1.5 $variable-spacing * 2;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: $variable-spacing * 2;
+}
+
+.labelIcon {
+  color: var(--variable-color-primary);
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .label {
+    font-size: 14px;
+  }
+
+  .setting {
+    font-size: 14px;
+  }
+}

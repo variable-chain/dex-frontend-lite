@@ -1,0 +1,54 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  border: 1px solid var(--variable-color-border);
+  border-radius: $variable-border-radius;
+  margin-top: 6 * $variable-spacing;
+}
+
+.headerWrapper,
+.dataWrapper {
+  padding: 4 * $variable-spacing;
+}
+
+.actionIcon {
+  color: var(--variable-color-primary);
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--variable-color-background-items-second);
+  border-radius: $variable-border-radius $variable-border-radius 0 0;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.dataWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2 * $variable-spacing;
+}
+
+.symbol {
+  color: var(--variable-color-text-highlight);
+}
+
+.dataLabel {
+  color: var(--variable-color-text-main);
+  font-weight: 500;
+}
+
+.dataValue {
+  color: var(--variable-color-text-highlight);
+}
+
+.green {
+  color: rgba(var(--variable-color-background-buy-rgb), 1);
+}
+
+.red {
+  color: rgba(var(--variable-color-background-sell-rgb), 1);
+}

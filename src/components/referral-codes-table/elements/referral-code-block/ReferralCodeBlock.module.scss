@@ -1,0 +1,43 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  border: 1px solid var(--variable-color-border);
+  border-radius: $variable-border-radius;
+  margin-top: 6 * $variable-spacing;
+}
+
+.headerWrapper,
+.dataWrapper {
+  padding: 4 * $variable-spacing;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $variable-spacing * 4;
+  background-color: var(--variable-color-background-items-second);
+  border-radius: $variable-border-radius $variable-border-radius 0 0;
+}
+
+.dataWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2 * $variable-spacing;
+}
+
+.code {
+  color: var(--variable-color-text-highlight);
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dataLabel {
+  font-weight: 500;
+}
+
+.dataValue {
+  color: var(--variable-color-text-highlight);
+}

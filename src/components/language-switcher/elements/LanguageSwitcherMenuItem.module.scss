@@ -1,0 +1,13 @@
+@import '~styles/theme/_theme.scss';
+
+.selected {
+  background-color: var(--variable-color-background-items-selected);
+}
+
+.menuItem {
+  color: var(--variable-color-text-main);
+}
+
+.flagIcon {
+  margin-right: 2 * $variable-spacing;
+}

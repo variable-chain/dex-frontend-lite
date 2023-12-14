@@ -1,0 +1,17 @@
+@import '~styles/theme/_theme.scss';
+
+.headerLabel {
+  color: var(--variable-color-text-main);
+
+  :global(.MuiTypography-root) {
+    font-weight: 400;
+    color: var(--variable-color-text-main);
+  }
+}
+
+.sortIcon {
+
+  svg {
+    fill: var(--variable-color-primary);
+  }
+}

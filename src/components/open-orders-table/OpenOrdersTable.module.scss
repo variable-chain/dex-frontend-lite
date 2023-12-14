@@ -1,0 +1,59 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  overflow-x: auto;
+}
+
+.tableHead {
+  background-color: var(--variable-color-background-items);
+}
+
+.tableBody {
+  background-color: var(--variable-color-background-table);
+
+  :global(.MuiTypography-root) {
+    color: var(--variable-color-text-highlight);
+  }
+
+  tr {
+    background-color: var(--variable-color-background-table-row);
+
+    &:nth-child(2n) {
+      background-color: var(--variable-color-background-items);
+    }
+  }
+}
+
+.noData {
+  padding-top: 4 * $variable-spacing;
+  text-align: center;
+}
+
+.dialog {
+
+  :global(.MuiPaper-root) {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.dialogContent {
+  font-size: 14px;
+}
+
+.paginationHolder {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and ($variable-breakpoint-min-lg) and ($variable-breakpoint-max-lg) {
+
+  .tableHolder {
+
+    :global(.MuiTableCell-root) {
+      padding: 4px;
+      height: 48px;
+    }
+  }
+}

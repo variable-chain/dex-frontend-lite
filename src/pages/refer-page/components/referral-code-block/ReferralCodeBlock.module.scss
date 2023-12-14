@@ -1,0 +1,44 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  padding: 10 * $variable-spacing 8 * $variable-spacing;
+  flex: 1;
+  background-color: var(--variable-color-background-items);
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .newCodeButton {
+    width: 200px;
+  }
+}
+
+.divider {
+  margin: 6 * $variable-spacing 0;
+}
+
+.dataTitle {
+  margin-bottom: $variable-spacing;
+  color: var(--variable-color-text-main);
+}
+
+.dataValue {
+  color: var(--variable-color-text-main);
+  font-weight: 600;
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .topSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .newCodeButton {
+      width: 100%;
+    }
+  }
+}

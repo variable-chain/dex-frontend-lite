@@ -1,0 +1,50 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: $variable-border-radius;
+  overflow: hidden;
+}
+
+.infoBlock {
+  background-color: var(--variable-color-background-items-second);
+  padding: $variable-spacing * 10;
+  width: 274px;
+}
+
+.actionBlock {
+  flex: 1;
+  background-color: var(--variable-color-background-items);
+  padding: $variable-spacing * 8;
+}
+
+.separator {
+  margin-bottom: 0;
+}
+
+.text {
+  margin-top: $variable-spacing * 4;
+  margin-bottom: $variable-spacing * 4;
+}
+
+@media screen and ($variable-breakpoint-max-sm) {
+
+  .root {
+    display: block;
+  }
+
+  .infoBlock {
+    background-color: var(--variable-color-background-items);
+    border-radius: $variable-border-radius;
+    margin-bottom: $variable-spacing * 4;
+    padding: $variable-spacing * 6;
+    width: auto;
+  }
+
+  .actionBlock {
+    border-radius: $variable-border-radius;
+    padding: $variable-spacing * 6;
+  }
+}

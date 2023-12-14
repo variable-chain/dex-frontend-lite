@@ -1,0 +1,53 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  padding: 0;
+}
+
+.rootOptions {
+  display: flex;
+  justify-content: center;
+
+  :global(.MuiButtonBase-root) {
+    flex: 1;
+    border-radius: 0;
+    padding: 10px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    max-height: 40px;
+    background-color: var(--variable-color-background-items-inactive);
+    border-width: 1px 1px 0 0;
+    margin-bottom: -1px;
+    color: var(--variable-color-text-primarytab-inactive);
+
+    &:first-of-type {
+      border-left-width: 1px;
+      border-top-left-radius: $variable-border-radius;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: $variable-border-radius;
+    }
+
+    &:hover,
+    &.selected {
+      color: var(--variable-color-primary);
+    }
+
+    &.selected {
+      background-color: var(--variable-color-primary);
+      color: var(--variable-color-text-secondary);
+    }
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .rootOptions {
+
+    :global(.MuiButtonBase-root) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '~styles/theme/_theme.scss';
+
+.tableHolder {
+
+  :global(.MuiTableCell-root) {
+    height: 48px;
+  }
+}
+
+.headerLabel {
+  color: var(--variable-color-text-main);
+}
+
+.paginationHolder {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and ($variable-breakpoint-min-lg) and ($variable-breakpoint-max-lg) {
+
+  .tableHolder {
+
+    :global(.MuiTableCell-root) {
+      padding: 4px;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  padding-right: $variable-spacing;
+}
+
+.dialog {
+
+  :global(.MuiPaper-root) {
+    min-width: 350px;
+    max-width: 450px;
+  }
+}
+
+.dialogContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6 * $variable-spacing !important;
+
+  :global(.MuiFormControlLabel-root) {
+    flex: 1;
+  }
+}
+
+.dialogAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slippageBox {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.expiryBox {
+  padding: $variable-spacing * 6;
+}
+
+.sliderHolder {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.keepPosLeverage,
+.settings {
+  display: flex;
+  align-items: center;
+  color: var(--variable-color-primary);
+  cursor: pointer;
+
+  :global(.MuiFormControlLabel-root) {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.settingsIcon {
+  transition: opacity 0.3s linear;
+  margin-right: -$variable-spacing * 5;
+  margin-left: 0;
+  padding: $variable-spacing $variable-spacing * 3 $variable-spacing $variable-spacing;
+  width: 60px;
+  height: 24px;
+  margin-bottom: 2px;
+  color: var(--variable-color-primary);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.maxEntryPrice {
+  margin-top: 3 * $variable-spacing;
+  color: var(--variable-color-text-label-one);
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .dialogContent {
+    padding-top: 2 * $variable-spacing !important;
+  }
+}

@@ -1,0 +1,23 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2 * $variable-spacing;
+}
+
+.actionIcon {
+  color: var(--variable-color-primary);
+  transition: opacity linear 200ms;
+  position: relative;
+  bottom: 2px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.refreshLabel {
+  color: var(--variable-color-primary);
+}

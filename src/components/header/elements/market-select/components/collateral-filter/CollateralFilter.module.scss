@@ -1,0 +1,59 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding-left: $variable-spacing * 3;
+  padding-right: $variable-spacing * 3;
+  border-radius: $variable-spacing;
+}
+
+.menuHolder {
+
+  :global(.MuiPaper-root) {
+    color: var(--variable-color-text-main);
+    background-color: var(--variable-color-background);
+  }
+}
+
+.selectedCollateral {
+  display: flex;
+  align-items: center;
+  gap: $variable-spacing * 2;
+
+  .label {
+    color: var(--variable-color-text-label-one);
+  }
+
+  .value {
+    font-weight: 600;
+    color: var(--variable-color-primary);
+  }
+}
+
+.arrowDropDown {
+  color: var(--variable-color-primary);
+  padding-top: $variable-spacing * 2;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $variable-spacing * 2;
+  color: var(--variable-color-text-main);
+
+  &.selected {
+    background-color: var(--variable-color-background-items-selected);
+  }
+}
+
+.tokenIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+}

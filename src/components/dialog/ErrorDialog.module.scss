@@ -1,0 +1,27 @@
+@import '~styles/theme/_theme.scss';
+@import '~styles/theme/_utils.scss';
+
+.root {
+  @include flex-center;
+
+  flex-direction: column;
+  background-color: var(--variable-color-background-items);
+  padding: 2 * $variable-spacing;
+  border-radius: $variable-border-radius;
+  border: 1px solid var(--variable-border);
+}
+
+.errorIcon {
+  color: var(--variable-red);
+  font-size: 70px;
+  margin-bottom: $variable-spacing;
+}
+
+.title {
+  color: var(--variable-red);
+}
+
+.errorMessage {
+  margin: 3 * $variable-spacing 0;
+  color: var(--variable-label);
+}

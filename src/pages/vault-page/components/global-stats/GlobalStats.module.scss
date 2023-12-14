@@ -1,0 +1,49 @@
+@import '~styles/theme/_theme.scss';
+
+.statContainer {
+  flex: 1;
+  padding: $variable-spacing * 2 $variable-spacing * 3;
+  border-radius: 8px;
+  background-color: var(--variable-color-background-items);
+  line-height: 1.2;
+}
+
+.statMainLabel {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  color: var(--variable-color-text-label-one);
+}
+
+.statMainValue {
+  font-size: 1rem;
+  color: var(--variable-color-text-highlight);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.statsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statLabel {
+  white-space: nowrap;
+  margin-top: $variable-spacing * 2;
+  color: var(--variable-color-text-label-one);
+  font-size: 0.5rem;
+  min-width: 50px;
+}
+
+.statValue {
+  color: var(--variable-color-text-highlight);
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.statCurrency {
+  color: var(--variable-color-text-highlight);
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.5rem;
+}

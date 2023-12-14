@@ -1,0 +1,31 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 6 * $variable-spacing;
+  box-sizing: content-box;
+  padding: 10 * $variable-spacing 8 * $variable-spacing;
+  background-color: var(--variable-color-background-items);
+  min-width: 200px;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--variable-color-text-main);
+  max-width: 250px;
+}
+
+.text {
+  color: var(--variable-color-text-label-two);
+  max-width: 250px;
+}
+
+@media screen and ($variable-breakpoint-max-sm) {
+
+  .root {
+    display: flex;
+    padding-top: 10 * $variable-spacing;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,31 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+  justify-content: center;
+
+  :global(.MuiButtonBase-root) {
+    flex: 1;
+    width: 64px;
+    height: 36px;
+
+    &:not(:last-of-type) {
+      border-radius: 8px;
+      margin-right: 8px;
+      border-color: var(--variable-color-border);
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &:last-of-type {
+      border-radius: 8px;
+    }
+
+    &.selected {
+      background-color: var(--variable-color-primary);
+      color: var(--variable-color-text-secondary);
+    }
+  }
+}

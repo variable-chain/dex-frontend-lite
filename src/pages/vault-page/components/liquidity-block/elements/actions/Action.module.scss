@@ -1,0 +1,171 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  display: flex;
+}
+
+.infoBlock {
+  width: 100%;
+  max-width: 280px;
+  padding: $variable-spacing * 8 $variable-spacing * 8 $variable-spacing * 8 0;
+  border-right: 1px solid var(--variable-color-separator-border);
+
+  .text {
+    color: var(--variable-color-text-label-two);
+    margin-top: $variable-spacing * 4;
+    margin-bottom: $variable-spacing * 4;
+  }
+}
+
+.helperText {
+  display: block;
+  text-align: right;
+  margin-top: calc($variable-spacing / 2);
+  color: var(--variable-color-text-main);
+
+  a {
+    cursor: pointer;
+    color: var(--variable-color-primary);
+  }
+}
+
+.contentBlock {
+  flex: 1;
+  max-width: 470px;
+  padding: $variable-spacing * 8;
+}
+
+.separator {
+  margin: 6 * $variable-spacing 0;
+}
+
+.iconSeparator {
+  margin: $variable-spacing * 8 0;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.inputLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2 * $variable-spacing;
+  margin-bottom: 2 * $variable-spacing;
+  height: 40px;
+}
+
+.withdrawLabel {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3 * $variable-spacing;
+}
+
+.initiateInputHolder {
+  width: 100%;
+
+  :global(.MuiOutlinedInput-root) {
+    width: 100%;
+  }
+}
+
+.summaryBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 3 * $variable-spacing;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc($variable-spacing / 2);
+    color: var(--variable-color-text-main);
+  }
+}
+
+.actionButton {
+  margin-top: $variable-spacing * 6;
+}
+
+.inputHolder {
+
+  :global(.MuiInputBase-root) {
+
+    input {
+      -webkit-text-fill-color: var(--variable-color-text-main);
+    }
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .root {
+    display: block;
+  }
+
+  .infoBlock {
+    display: none;
+  }
+
+  .contentBlock {
+    padding: $variable-spacing * 8 0;
+  }
+
+  .inputLine {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+
+    .labelHolder {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: $variable-spacing * 2;
+    }
+
+    .inputHolder {
+
+      :global(.MuiInputBase-root) {
+        width: 100%;
+        padding-right: $variable-spacing * 2;
+
+        input {
+          width: 90%;
+        }
+      }
+
+      :global(.MuiInputAdornment-root) {
+        margin-top: 4px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and ($variable-breakpoint-max-xs) {
+
+  .inputLine {
+
+    .inputHolder {
+
+      :global(.MuiInputBase-root) {
+        padding-right: 0;
+
+        input {
+          width: 45%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .buttonHolder {
+    text-align: center;
+  }
+
+  .expectedAmountInput {
+    margin-right: 8px;
+  }
+}

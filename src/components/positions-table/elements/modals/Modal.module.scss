@@ -1,0 +1,60 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+
+  :global(.MuiPaper-root) {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &.wide {
+
+    :global(.MuiPaper-root) {
+      max-width: 600px;
+    }
+  }
+}
+
+.contentWithGap {
+  margin-bottom: $variable-spacing * 8;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: $variable-spacing * 6;
+  padding-top: $variable-spacing * 6;
+  padding-bottom: $variable-spacing * 6;
+}
+
+.inputBlock {
+  justify-content: left;
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 3;
+}
+
+.centered {
+  display: block;
+  font-weight: 600;
+  text-align: left;
+}
+
+.newPositionHeader {
+  margin: 20px 0;
+}
+
+.newPositionDetails {
+  margin-top: $variable-spacing * 3;
+  margin-bottom: $variable-spacing * 3;
+}
+
+.helperText {
+  cursor: pointer;
+  text-align: right;
+  margin-top: calc($variable-spacing / 2);
+
+  a {
+    cursor: pointer;
+    color: var(--variable-color-primary);
+  }
+}

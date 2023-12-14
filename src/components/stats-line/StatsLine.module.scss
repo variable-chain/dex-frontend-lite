@@ -1,0 +1,130 @@
+@import '~styles/theme/_theme.scss';
+
+.root {
+  width: 100%;
+  display: flex;
+  gap: 3 * $variable-spacing;
+}
+
+.statContainer {
+  flex: 1;
+  padding: $variable-spacing * 5 $variable-spacing * 6;
+  border-radius: $variable-border-radius;
+  background-color: var(--variable-color-background-items);
+}
+
+.statLabel {
+  display: block;
+  white-space: nowrap;
+  margin-top: $variable-spacing * 2;
+  color: var(--variable-color-text-label-one);
+  min-width: 50px;
+  line-height: 12px;
+}
+
+.statValue {
+  display: inline-block;
+  color: var(--variable-color-text-highlight);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.statCurrency {
+  display: inline-block;
+  color: var(--variable-color-text-highlight);
+  white-space: nowrap;
+  font-size: 8px;
+  margin-left: 4px;
+}
+
+.iconButton {
+  color: var(--variable-color-text-secondary);
+  padding: 0;
+  min-width: 40px;
+  height: 40px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-lg) {
+
+  .root {
+    overflow-x: auto;
+  }
+}
+
+@media screen and ($variable-breakpoint-min-sm) and ($variable-breakpoint-max-lg) {
+
+  .statValue {
+    font-size: 16px;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-md) {
+
+  .root {
+    margin-top: $variable-spacing * 3;
+  }
+
+  .statContainer {
+    padding: $variable-spacing * 2 $variable-spacing * 4;
+  }
+}
+
+@media screen and ($variable-breakpoint-max-sm) {
+
+  .root {
+    justify-content: flex-start;
+  }
+
+  .statValue {
+    font-size: 14px;
+  }
+
+  .statContainer {
+    padding: $variable-spacing * 2 $variable-spacing * 4;
+    max-height: 82px;
+  }
+
+  .rootMobile {
+    display: flex;
+    gap: $variable-spacing * 3;
+    margin-bottom: $variable-spacing * 1;
+    margin-top: $variable-spacing * 3;
+
+    .statContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $variable-spacing * 2 $variable-spacing * 4;
+      gap: $variable-spacing * 2;
+    }
+
+    .groupedStat {
+
+      & + .groupedStat {
+        margin-top: $variable-spacing * 0;
+      }
+
+      .statLabel {
+        margin-top: $variable-spacing * 2.5;
+        font-size: 10px;
+        line-height: 2px;
+        min-width: 50px;
+        margin-bottom: 0;
+      }
+
+      .statValue {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+
+    .statValue {
+      white-space: normal;
+    }
+  }
+}

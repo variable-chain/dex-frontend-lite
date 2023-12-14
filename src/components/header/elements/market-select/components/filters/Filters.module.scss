@@ -1,0 +1,19 @@
+@import '~styles/theme/_theme.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inactive,
+.active {
+  padding: $variable-spacing $variable-spacing * 3;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--variable-color-primary-secondary);
+  color: var(--variable-color-primary);
+}
